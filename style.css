@@ -1,0 +1,123 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(17,24,39);
+    color: white;
+}
+.hamburger{
+    display: none;
+}
+header nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    list-style: none;
+}
+header nav ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+.home{
+    padding: 2px;
+    background-color: rgb(92,92,206);
+    font-size: 18px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+.section-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.left{
+    display: flex;
+}
+p{
+    font-size: 25px;
+}
+.section-one nav h1{
+    font-size: 50px;
+}
+.dev{
+    color: rgb(207, 210, 43);
+}
+.section-two h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline aqua;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    /* grid-template-rows: repeat(2,360px); */
+    justify-content: center;
+    align-items: center;
+    grid-gap: 40px;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    font-size: 18px;
+}
+footer h2{
+    text-decoration: underline aqua;
+}
+button:hover{
+    cursor: pointer;
+    font-size: 19px;
+}
+a:hover{
+    text-decoration: underline;
+    font-size: 19px;
+}
+.projects, .contacts img:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger:hover{
+        cursor: pointer;
+    }
+    header nav ul{
+        display: none;
+    }
+    .section-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-one p{
+        font-size: 20px;
+    }
+    .section-one h1{
+        font-size: 25px;
+    }
+    .pc img{
+        width: 60vw;
+    }
+    .section-two h1{
+        font-size: 25px;
+    }
+    .section-two p{
+        font-size: 20px;
+    }
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .projects img{
+        width: 55vw;
+    }
+}
